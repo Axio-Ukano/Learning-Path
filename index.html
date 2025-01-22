@@ -142,11 +142,69 @@
                     <li><strong>&lt;class&gt;:</strong> Se utiliza para agrupar elementos con características similares y aplicarles estilos comunes.</li>
                 </ul>
                 <h3>Elementos de Reemplazo (img, input, br, etc.)</h3>
+                <p>Los elementos de reemplazo permiten insertar contenido multimedia y otros elementos interactivos. Algunos ejemplos:</p>
+                <ul>
+                    <li><strong>&lt;img src="url" alt="descripción"&gt;:</strong> Inserta imágenes</li>
+                    <li><strong>&lt;input type="text"&gt;:</strong> Crea campos de texto en formularios.</li>
+                    <li><strong>&lt;br&gt;:</strong> Inserta saltos de línea.</li>
+                </ul>
                 <h3>Formularios</h3>
+                <p>Los formularios permiten interactuar con el usuario. Un formulario básico podría lucir así:</p>
+                <pre>
+                    <code>
+&lt;form action=&quot;/submit&quot; method=&quot;POST&quot;&gt;
+    &lt;label for=&quot;nombre&quot;&gt;Nombre:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;nombre&quot; name=&quot;nombre&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;
+                    </code>
+                </pre>
                 <h3>Metadatos y SEO</h3>
+                <p>Los metadatos son esenciales para mejorar la visibilidad y accesibilidad de tu página. Asegúrate de usar siempre los metadatos básicos en el &lt;head&gt;:</p>
+                <ul>
+                    <li><strong>&lt;meta charset="UTF-8"&gt;:</strong> Define la codificación de caracteres.</li>
+                    <li><strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;:</strong> Hace que la página sea responsive.</li>
+                    <li><strong>Favicon:</strong> Icono que aparece en la pestaña del navegador.</li>
+                </ul>
+                <pre>
+                    <code>
+                        &lt;link rel=&quot;icon&quot; href=&quot;favicon.ico&quot;&gt;
+                    </code>
+                </pre>
                 <h3>Video y Audio</h3>
+                <p>HTML permite incrustar contenido multimedia con las etiquetas &lt;video&gt; y &lt;audio&gt;:</p>
+                <pre>
+                    <code>
+&lt;video controls&gt;
+    &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    Tu navegador no soporta video HTML5.
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+    &lt;source src=&quot;audio.mp3&quot; type=&quot;audio/mp3&quot;&gt;
+    Tu navegador no soporta audio HTML5.
+&lt;/audio&gt;
+                    </code>
+                </pre>
                 <h3>Iframe y Otros Elementos Avanzados</h3>
+                <p>HTML también ofrece elementos avanzados para incrustar contenido de otras fuentes. Por ejemplo, los &lt;iframe&gt; permiten incrustar otros documentos HTML dentro del actual:</p>
+                <pre>
+                    <code>
+&lt;iframe src=&quot;https://www.ejemplo.com&quot;&gt;&lt;/iframe&gt;
+                    </code>
+                </pre>
+                <p>Además, la etiqueta &lt;dialog&gt; se puede usar para crear modales interactivos:</p>
+                <pre>
+                    <code>
+&lt;dialog open&gt;Este es un modal.&lt;/dialog&gt;
+                    </code>
+                </pre>
                 <h3>Uso del MDN (Mozilla Developer Network)</h3>
+                <p>El MDN Web Docs es una herramienta confiable y completa para consultar documentación sobre HTML y otras tecnologías web. Es ideal para aprender sobre etiquetas, atributos, y conceptos fundamentales con ejemplos claros y actualizados. También incluye guías para prácticas recomendadas y explicaciones detalladas sobre cómo usar cada elemento correctamente.</p>
+                <p>Por ejemplo, al buscar sobre la etiqueta &lt;img&gt;, puedes encontrar información sobre sus atributos (src, alt) y ejemplos prácticos para su implementación. MDN es ampliamente recomendado tanto para principiantes como para desarrolladores experimentados.</p>
+                <h3>Conclusión</h3>
+                <p>HTML es el pilar fundamental del desarrollo web, ya que proporciona la estructura básica de cualquier sitio. A través de sus etiquetas, organiza el contenido y permite que los navegadores lo representen de manera comprensible para los usuarios.</p>
+                <p>Dominar HTML es el primer paso para entrar al mundo del desarrollo web. Aunque parezca sencillo, su correcta aplicación, junto con el uso de etiquetas semánticas y buenas prácticas, hace una gran diferencia en la accesibilidad y usabilidad de los sitios. Para profundizar y resolver dudas, el uso de recursos como MDN es indispensable.</p>
             </article>
         </section>
         <section id="CSS_Styling" class="main-section">
