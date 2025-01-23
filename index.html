@@ -35,7 +35,7 @@
             </header>
             <article>
                 <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Proporciona la estructura y el contenido de las páginas web mediante elementos y etiquetas.</p>
-                <h3>Requisitos para trabajar con HTML:</h3>
+                <h3>Requisitos para trabajar con HTML</h3>
                 <ul>
                     <li><b>Editor de texto:</b> Se puede hacer uso de cualquier editor de texto, como Visual Studio Code, Sublime Text o incluso Notepad.</li>
                     <li><b>Navegador web:</b> Para visualizar el trabajo, es necesario contar con un navegador como Chrome, Firefox, etc.</li>
@@ -168,7 +168,7 @@
                 </ul>
                 <pre>
                     <code>
-                        &lt;link rel=&quot;icon&quot; href=&quot;favicon.ico&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;favicon.ico&quot;&gt;
                     </code>
                 </pre>
                 <h3>Video y Audio</h3>
@@ -209,25 +209,209 @@
         </section>
         <section id="CSS_Styling" class="main-section">
             <header>
-                <h1>CSS Styling</h1>
+                <h1>Fundamentos de CSS</h1>
             </header>
             <article>
-                <p>CSS (Cascading Style Sheets) is used to style and layout web pages. It allows you to control the appearance of HTML elements, including color<background-color></background-color>s, fonts, and spacing.</p>
-                <p>CSS can be applied inline, embedded within HTML, or linked as an external stylesheet. Each method has its use cases and benefits.</p>
-                <h3>Recommended Specifications:</h3>
+                <p>CSS (Cascading Style Sheets) es un lenguaje de estilos utilizado para definir la apariencia y el formato de un sitio web. Con CSS, puedes controlar el diseño, los colores, las fuentes y el espaciado de los elementos HTML.</p>
+                <h3>Requisitos para trabajar con CSS</h3>
                 <ul>
-                    <li><b>Selectors:</b> Define which HTML elements to style, such as classes (<code>.class-name</code>) and IDs (<code>#id-name</code>).</li>
-                    <li><b>Properties:</b> Define the style to be applied, such as <code>color</code>, <code>font-size</code>, and <code>margin</code>.</li>
-                    <li><b>Layouts:</b> Techniques like Flexbox and Grid for creating complex layouts.</li>
-                    <li><b>Responsive Design:</b> Using media queries to adjust styles based on device characteristics.</li>
+                    <li><stong>Editor de texto:</stong> Puedes utilizar cualquier editor de texto, como Visual Studio Code, Sublime Text, o incluso Notepad.</li>
+                    <li><stong>Navegador web:</stong> Necesitarás un navegador como Chrome, Firefox, etc., para visualizar tu trabajo.</li>
                 </ul>
-                <p>Example:</p>
-                <code>
-body {<br>
-    font-family: Arial, sans-serif;<br>
-    color: #333;<br>
+                <h3>Estructura Básica de CSS</h3>
+                <p>Los estilos CSS pueden colocarse en:</p>
+                <ul>
+                    <li><strong>Hoja de estilo externa:</strong> Utiliza un archivo .css separado.</li>
+                    <li><strong>Hoja de estilo interna:</strong> Dentro de la etiqueta &lt;style&gt; en el &lt;head&gt; del documento HTML.</li>
+                    <li><strong>Estilos de línea:</strong> Directamente en el atributo style de los elementos HTML.</li>
+                </ul>
+                <pre>
+                    <code>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+                    </code>
+                </pre>
+                <h3>Selectore, Propiedades y Valores</h3>
+                <p>Una regla CSS costa de:</p>
+                <ul>
+                    <li><strong>Selector:</strong> Indica el elemento al que se aplicarán los estilos (e.g., h1).</li>
+                    <li><strong>Propiedad:</strong> Describe el aspecto que deseas cambiar (e.g., color).</li>
+                    <li><strong>Valor:</strong> Valor: Define el nuevo valor para la propiedad (e.g., blue).</li>
+                </ul>
+                <pre>
+                    <code>
+h1 {
+    color: blue;
 }
-                </code>
+                    </code>
+                </pre>
+                <h3>Concepto de Cascada</h3>
+                <p>La "cascada" en CSS se refiere a la forma en que se aplican las reglas de estilo. Las reglas se aplican en un orden específico, permitiendo la combinación y superposición de estilos. El orden de las reglas determina cuál prevalece en caso de conflicto.</p>
+                <h3>Colores</h3>
+                <p>Puedes especificar colores usando nombres de colores, valores hexadecimales, RGB, RGBA, HSL y HSLA.</p>
+                <pre>
+                    <code>
+h1 {
+    color: red; /* Nombre del color */
+    color: #ff0000; /* Hexadecimal */
+    color: rgb(255, 0, 0); /* RGB */
+    color: rgba(255, 0, 0, 0.5); /* RGBA */
+}
+                    </code>
+                </pre>
+                <h3>Selectores en CSS</h3>
+                <ul>
+                    <li><strong>Selectores de clase:</strong> Seleccionan elementos con un atributo de clase específico.</li>
+                    <pre>
+                            <code>
+.button {
+    background-color: #4CAF50;
+    color: white;
+}
+                            </code>
+                    </pre>
+                    <li><strong>Selectores de ID:</strong> Seleccionan un elemento único con un atributo de ID específico.</li>
+                    <pre>
+                        <code>
+#main {
+    background-color: yellow;
+}
+                        </code>
+                    </pre>
+                    <li><strong>Selectores combinados:</strong> Aplican estilos más específicos combinando selectores.</li>
+                    <pre>
+                        <code>
+div p {
+    color: purple;
+}
+                        </code>
+                    </pre>
+                    <li><strong>Operador &gt;:</strong> Selecciona elementos que son hijos directos de un elemento padre.</li>
+                    <pre>
+                        <code>
+ul > li {
+    margin: 5px;
+}
+                        </code>
+                    </pre>
+                    <li><strong>Operador ~:</strong> Selecciona elementos que son hermanos siguientes.</li>
+                    <pre>
+                        <code>
+p ~ span {
+    color: gray;
+}
+                        </code>
+                    </pre>
+                    <li><strong>Operador +:</strong> Selecciona el hermano inmediato siguiente.</li>
+                    <pre>
+                        <code>
+h1 + p {
+    font-size: 18px;
+}
+                        </code>
+                    </pre>
+                </ul>
+                <h3>Pseudo-clases y Pseudo-elementos</h3>
+                <ul>
+                    <li><strong>Pseudo-clases:</strong> Definen un estado especial de un elemento.</li>
+                    <pre>
+                        <code>
+a:hover {
+    color: red;
+}
+                        </code>
+                    </pre>
+                    <li><strong>Pseudo-elementos:</strong> Definen partes específicas de un elemento.</li>
+                    <pre>
+                        <code>
+p::first-line {
+    font-weight: bold;
+}
+                        </code>
+                    </pre>
+                </ul>
+                <h3>Herencia</h3>
+                <p>La herencia en CSS permite que ciertas propiedades se transmitan de un elemento padre a sus hijos. No todas las propiedades son hereditarias.</p>
+                <pre>
+                    <code>
+body {
+    font-family: Arial, sans-serif;
+}
+p {
+    /* El párrafo heredará el font-family del body */
+    color: blue;
+}
+                    </code>
+                </pre>
+                <h3>Valores especiales de la herencia</h3>
+                <p>Algunos valores especiales en CSS que afectan la herencia incluyen inherit, initial, y unset.</p>
+                <pre>
+                    <code>
+.child {
+    color: inherit; /* Toma el color del elemento padre */
+}
+                    </code>
+                </pre>
+                <h3>Modelo de la Caja</h3>
+                <p>El modelo de la caja describe cómo se calculan el ancho y el alto de los elementos, incluyendo margin, border, padding y content.</p>
+                <ul>
+                    <li><strong>Margin:</strong> Espacio exterior alrededor del elemento.</li>
+                    <li><strong>Padding:</strong> Espacio interior entre el borde y el contenido del elemento.</li>
+                    <li><strong>Border:</strong> Borde alrededor del contenido y el padding del elemento.</li>
+                </ul>
+                <pre>
+                    <code>
+div {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid black;
+}
+                    </code>
+                </pre>
+                <h3>box-sizing</h3>
+                <p>La propiedad box-sizing define cómo se calculan el ancho y el alto de un elemento. El valor border-box incluye el padding y el borde en el ancho y el alto total del elemento.</p>
+                <pre>
+                    <code>
+div {
+    box-sizing: border-box;
+}
+                    </code>
+                </pre>
+                <h3>Especificidad y Cascada</h3>
+                <p>La especificidad determina qué reglas CSS se aplican a un elemento cuando hay múltiples reglas que coinciden. Las reglas más específicas tienen mayor prioridad.</p>
+                <p>La cascada en CSS determina el orden en que se aplican las reglas de estilo. Las reglas más específicas y las definidas más adelante en el código tienen prioridad.</p>
+                <h3>Fallbacks</h3>
+                <p>Los fallbacks son valores de respaldo que se usan si un navegador no soporta una propiedad o valor CSS.</p>
+                <pre>
+                    <code>
+div {
+    background: red; /* Fallback */
+    background: rgba(255, 0, 0, 0.5);
+}
+
+                    </code>
+                </pre>
+                <h3>Estilos en línea</h3>
+                <p>Los estilos en línea se aplican directamente a un elemento HTML usando el atributo style.</p>
+                <pre>
+                    <code>
+                        &lt;style="color: blue;">Texto en azul&gt;
+                    </code>
+                </pre>
+                <h3>Formas de saltarse la especifidad</h3>
+                <pre>
+                    <code>
+div {
+    color: red !important;
+}
+                    </code>
+                </pre>
+                <h3>Unidades Relativas y Absolutas</h3>
+                <p>Las unidades absolutas (e.g., px, cm, mm) tienen un tamaño fijo, mientras que las unidades relativas (e.g., %, em, rem) dependen de otros valores.</p>
+                <h3>Reset CSS y Normalize</h3>
+                <p>Reset CSS y Normalize son herramientas que ayudan a eliminar inconsistencias entre navegadores.</p>
+                <h3>Conclusión</h3>
+                <p>CSS es fundamental para la presentación y el diseño de páginas web. A través de su uso, puedes crear sitios web visualmente atractivos y funcionales. Comprender conceptos como la cascada, la especificidad y el modelo de la caja es crucial para desarrollar estilos efectivos y mantenibles.</p>
+                <p>La correcta aplicación de CSS, junto con buenas prácticas y el uso adecuado de selectores, pseudo-clases y unidades, mejora significativamente la usabilidad y accesibilidad de los sitios web. Dominar CSS te permitirá tener un control total sobre la apariencia de tus proyectos web y asegurar que se vean bien en todos los dispositivos y navegadores.</p>
             </article>
         </section>
         <section id="JavaScript_Programming" class="main-section">
