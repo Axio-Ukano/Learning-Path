@@ -42,21 +42,19 @@
                 </ul>
                 <h3>Estructura Básica de un Documento Html</h3>
                 <p>Antes de profundizar en las etiquetas, es esencial entender la estructura básica de un archivo HTML. Un documento HTML debe tener una estructura inicial de este tipo:</p>
-                <pre>
                     <code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;es&quot;&gt;
-    &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Mi Página Web&lt;/title&gt;
-&lt;/head&gt;
-                        &lt;body&gt;
-    &lt;h1&gt;Bienvenidos a mi página&lt;/h1&gt;
-&lt;/body&gt;
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang=&quot;es&quot;&gt;<br>
+&nbsp;&lt;head&gt;<br>
+&nbsp;&lt;meta charset=&quot;UTF-8&quot;&gt;<br>
+&nbsp;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br>
+&nbsp;&lt;title&gt;Mi Página Web&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&nbsp;&lt;h1&gt;Bienvenidos a mi página&lt;/h1&gt;<br>
+&lt;/body&gt;<br>
 &lt;/html&gt;
                     </code>
-                </pre>
                 <h3>Etiquetas y Elementos Comunes</h3>
                 <ul>
                     <li><b>&lt;html&gt;:</b> Define el inicio de un documento HTML.</li>
@@ -65,55 +63,43 @@
                 </ul>
                 <h3>¿Qué son las Etiquetas (Tags)?</h3>
                 <p>Las etiquetas HTML son bloques de contenido que indican cómo debe mostrarse en la página. Cada etiqueta tiene una etiqueta de apertura y una de cierre. Un ejemplo es la etiqueta &lt;p&gt; para párrafos:</p>
-                <pre>
                     <code>
 &lt;p&gt;Este es un párrafo de texto.&lt;/p&gt;
                     </code>
-                </pre>
                 <h3>Encabezados (h1-h6)</h3>
                 <p>Los encabezados son importantes para organizar el contenido y proporcionar estructura a la página. Se utilizan para indicar títulos y subtítulos:</p>
-                <pre>
                     <code>
-&lt;h1&gt;Encabezado Principal&lt;/h1&gt;
+&lt;h1&gt;Encabezado Principal&lt;/h1&gt;<br>
 &lt;h2&gt;Subencabezado&lt;/h2&gt;
                     </code>
-                </pre>
                 <h3>Párrafos y Textos</h3>
                 <p>Los párrafos se definen con la etiqueta &lt;p&gt;, y dentro de ellos, se puede escribir texto.</p>
-                <pre>
                     <code>
 &lt;p&gt;Este es un párrafo de texto.&lt;/p&gt;
                     </code>
-                </pre>
                 <h3>Listas: Ordenadas y No Ordenadas</h3>
                 <p>Las listas ayudan a organizar el contenido. Se pueden crear listas ordenadas o no ordenadas:</p>
                 <ul>
                     <li><strong>Listas no ordenadas (&lt;ul&gt;):</strong>Usan puntos como marcadores</li>
-                    <pre>
                         <code>
-&lt;ul&gt;
-    &lt;li&gt;Elemento 1&lt;/li&gt;
-    &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;ul&gt;<br>
+&nbsp;&lt;li&gt;Elemento 1&lt;/li&gt;<br>
+&nbsp;&lt;li&gt;Elemento 2&lt;/li&gt;<br>
 &lt;/ul&gt;
                         </code>
-                    </pre>
                     <li><strong>Listas ordenadas (&lt;ol&gt;):</strong> Usan números o letras</li>
-                    <pre>
                         <code>
-&lt;ol&gt;
-    &lt;li&gt;Primer paso&lt;/li&gt;
-    &lt;li&gt;Segundo paso&lt;/li&gt;
+&lt;ol&gt;<br>
+&nbsp;&lt;li&gt;Primer paso&lt;/li&gt;<br>
+&nbsp;&lt;li&gt;Segundo paso&lt;/li&gt;<br>
 &lt;/ol&gt;
                         </code>
-                    </pre>
                 </ul>
                 <h3>Elementos Anidados</h3>
                 <p>En HTML, puedes anidar una etiqueta dentro de otra para modificar su comportamiento. Por ejemplo, &lt;strong&gt; se usa para resaltar texto:</p>
-                <pre>
                     <code>
 &lt;p&gt;El &lt;strong&gt;HTML&lt;/strong&gt; es esencial.&lt;/p&gt;
                     </code>
-                </pre>
                 <h3>Semántica en HTML</h3>
                 <p>La semántica se refiere al uso adecuado de las etiquetas para hacer el contenido más comprensible tanto para los usuarios como para los motores de búsqueda. Algunas etiquetas semánticas son:</p>
                 <ul>
@@ -130,12 +116,10 @@
                     <li><strong>&lt;href&gt;:</strong> Define el destino de un enlace.</li>
                     <li><strong>&lt;alt&gt;:</strong> Proporciona una descripción alternativa de una imagen para mejorar la accesibilidad.</li>
                 </ul>
-                <pre>
                     <code>
-&lt;img src=&quot;imagen.jpg&quot; alt=&quot;Descripción de la imagen&quot;&gt;
+&lt;img src=&quot;imagen.jpg&quot; alt=&quot;Descripción de la imagen&quot;&gt;<br>
 &lt;a href=&quot;https://www.ejemplo.com&quot;&gt;Visitar ejemplo.com&lt;/a&gt;
                     </code>
-                </pre>
                 <h3>Atributos ID y Class</h3>
                 <ul>
                     <li><strong>&lt;id&gt;:</strong> Atributo único que identifica un elemento específico en la página.</li>
@@ -150,15 +134,13 @@
                 </ul>
                 <h3>Formularios</h3>
                 <p>Los formularios permiten interactuar con el usuario. Un formulario básico podría lucir así:</p>
-                <pre>
                     <code>
-&lt;form action=&quot;/submit&quot; method=&quot;POST&quot;&gt;
-    &lt;label for=&quot;nombre&quot;&gt;Nombre:&lt;/label&gt;
-    &lt;input type=&quot;text&quot; id=&quot;nombre&quot; name=&quot;nombre&quot;&gt;
-    &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+&lt;form action=&quot;/submit&quot; method=&quot;POST&quot;&gt;<br>
+&nbsp;&lt;label for=&quot;nombre&quot;&gt;Nombre:&lt;/label&gt;<br>
+&nbsp;&lt;input type=&quot;text&quot; id=&quot;nombre&quot; name=&quot;nombre&quot;&gt;<br>
+&nbsp;&lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;<br>
 &lt;/form&gt;
                     </code>
-                </pre>
                 <h3>Metadatos y SEO</h3>
                 <p>Los metadatos son esenciales para mejorar la visibilidad y accesibilidad de tu página. Asegúrate de usar siempre los metadatos básicos en el &lt;head&gt;:</p>
                 <ul>
@@ -166,39 +148,29 @@
                     <li><strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;:</strong> Hace que la página sea responsive.</li>
                     <li><strong>Favicon:</strong> Icono que aparece en la pestaña del navegador.</li>
                 </ul>
-                <pre>
                     <code>
 &lt;link rel=&quot;icon&quot; href=&quot;favicon.ico&quot;&gt;
                     </code>
-                </pre>
                 <h3>Video y Audio</h3>
                 <p>HTML permite incrustar contenido multimedia con las etiquetas &lt;video&gt; y &lt;audio&gt;:</p>
-                <pre>
                     <code>
-&lt;video controls&gt;
-    &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;
-    Tu navegador no soporta video HTML5.
-&lt;/video&gt;
-
-&lt;audio controls&gt;
-    &lt;source src=&quot;audio.mp3&quot; type=&quot;audio/mp3&quot;&gt;
-    Tu navegador no soporta audio HTML5.
+&lt;video controls&gt;<br>
+&nbsp;&lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;<br>
+&lt;/video&gt;<br>
+<br>
+&lt;audio controls&gt;<br>
+&nbsp;&lt;source src=&quot;audio.mp3&quot; type=&quot;audio/mp3&quot;&gt;<br>
 &lt;/audio&gt;
                     </code>
-                </pre>
                 <h3>Iframe y Otros Elementos Avanzados</h3>
                 <p>HTML también ofrece elementos avanzados para incrustar contenido de otras fuentes. Por ejemplo, los &lt;iframe&gt; permiten incrustar otros documentos HTML dentro del actual:</p>
-                <pre>
                     <code>
 &lt;iframe src=&quot;https://www.ejemplo.com&quot;&gt;&lt;/iframe&gt;
                     </code>
-                </pre>
                 <p>Además, la etiqueta &lt;dialog&gt; se puede usar para crear modales interactivos:</p>
-                <pre>
                     <code>
 &lt;dialog open&gt;Este es un modal.&lt;/dialog&gt;
                     </code>
-                </pre>
                 <h3>Uso del MDN (Mozilla Developer Network)</h3>
                 <p>El MDN Web Docs es una herramienta confiable y completa para consultar documentación sobre HTML y otras tecnologías web. Es ideal para aprender sobre etiquetas, atributos, y conceptos fundamentales con ejemplos claros y actualizados. También incluye guías para prácticas recomendadas y explicaciones detalladas sobre cómo usar cada elemento correctamente.</p>
                 <p>Por ejemplo, al buscar sobre la etiqueta &lt;img&gt;, puedes encontrar información sobre sus atributos (src, alt) y ejemplos prácticos para su implementación. MDN es ampliamente recomendado tanto para principiantes como para desarrolladores experimentados.</p>
@@ -225,11 +197,9 @@
                     <li><strong>Hoja de estilo interna:</strong> Dentro de la etiqueta &lt;style&gt; en el &lt;head&gt; del documento HTML.</li>
                     <li><strong>Estilos de línea:</strong> Directamente en el atributo style de los elementos HTML.</li>
                 </ul>
-                <pre>
                     <code>
 &lt;link rel="stylesheet" href="styles.css"&gt;
                     </code>
-                </pre>
                 <h3>Selectore, Propiedades y Valores</h3>
                 <p>Una regla CSS costa de:</p>
                 <ul>
@@ -237,120 +207,96 @@
                     <li><strong>Propiedad:</strong> Describe el aspecto que deseas cambiar (e.g., color).</li>
                     <li><strong>Valor:</strong> Valor: Define el nuevo valor para la propiedad (e.g., blue).</li>
                 </ul>
-                <pre>
                     <code>
-h1 {
-    color: blue;
+h1 {<br>
+&nbsp;color: blue;<br>
 }
                     </code>
-                </pre>
                 <h3>Concepto de Cascada</h3>
                 <p>La "cascada" en CSS se refiere a la forma en que se aplican las reglas de estilo. Las reglas se aplican en un orden específico, permitiendo la combinación y superposición de estilos. El orden de las reglas determina cuál prevalece en caso de conflicto.</p>
                 <h3>Colores</h3>
                 <p>Puedes especificar colores usando nombres de colores, valores hexadecimales, RGB, RGBA, HSL y HSLA.</p>
-                <pre>
                     <code>
-h1 {
-    color: red; /* Nombre del color */
-    color: #ff0000; /* Hexadecimal */
-    color: rgb(255, 0, 0); /* RGB */
-    color: rgba(255, 0, 0, 0.5); /* RGBA */
+h1 {<br>
+&nbsp;color: red; /* Nombre del color */<br>
+&nbsp;color: #ff0000; /* Hexadecimal */<br>
+&nbsp;color: rgb(255, 0, 0); /* RGB */<br>
+&nbsp;color: rgba(255, 0, 0, 0.5); /* RGBA */<br>
 }
                     </code>
-                </pre>
                 <h3>Selectores en CSS</h3>
                 <ul>
                     <li><strong>Selectores de clase:</strong> Seleccionan elementos con un atributo de clase específico.</li>
-                    <pre>
                             <code>
-.button {
-    background-color: #4CAF50;
-    color: white;
+.button {<br>
+&nbsp;background-color: #4CAF50;<br>
+&nbsp;color: white;<br>
 }
                             </code>
-                    </pre>
                     <li><strong>Selectores de ID:</strong> Seleccionan un elemento único con un atributo de ID específico.</li>
-                    <pre>
                         <code>
-#main {
-    background-color: yellow;
+#main {<br>
+&nbsp;background-color: yellow;<br>
 }
                         </code>
-                    </pre>
                     <li><strong>Selectores combinados:</strong> Aplican estilos más específicos combinando selectores.</li>
-                    <pre>
                         <code>
-div p {
-    color: purple;
+div p {<br>
+&nbsp;color: purple;<br>
 }
                         </code>
-                    </pre>
                     <li><strong>Operador &gt;:</strong> Selecciona elementos que son hijos directos de un elemento padre.</li>
-                    <pre>
                         <code>
-ul > li {
-    margin: 5px;
+ul > li {<br>
+&nbsp;margin: 5px;<br>
 }
                         </code>
-                    </pre>
                     <li><strong>Operador ~:</strong> Selecciona elementos que son hermanos siguientes.</li>
-                    <pre>
                         <code>
-p ~ span {
-    color: gray;
+p ~ span {<br>
+&nbsp;color: gray;<br>
 }
                         </code>
-                    </pre>
                     <li><strong>Operador +:</strong> Selecciona el hermano inmediato siguiente.</li>
-                    <pre>
                         <code>
-h1 + p {
-    font-size: 18px;
+h1 + p {<br>
+&nbsp;font-size: 18px;<br>
 }
                         </code>
-                    </pre>
                 </ul>
-                <h3>Pseudo-clases y Pseudo-elementos</h3>
+<h3>Pseudo-clases y Pseudo-elementos</h3>
                 <ul>
                     <li><strong>Pseudo-clases:</strong> Definen un estado especial de un elemento.</li>
-                    <pre>
                         <code>
-a:hover {
-    color: red;
+a:hover {<br>
+&nbsp;color: red;<br>
 }
                         </code>
-                    </pre>
                     <li><strong>Pseudo-elementos:</strong> Definen partes específicas de un elemento.</li>
-                    <pre>
                         <code>
-p::first-line {
-    font-weight: bold;
+p::first-line {<br>
+&nbsp;font-weight: bold;<br>
 }
                         </code>
-                    </pre>
                 </ul>
-                <h3>Herencia</h3>
-                <p>La herencia en CSS permite que ciertas propiedades se transmitan de un elemento padre a sus hijos. No todas las propiedades son hereditarias.</p>
-                <pre>
+<h3>Herencia</h3>
+<p>La herencia en CSS permite que ciertas propiedades se transmitan de un elemento padre a sus hijos. No todas las propiedades son hereditarias.</p>
                     <code>
-body {
-    font-family: Arial, sans-serif;
-}
-p {
-    /* El párrafo heredará el font-family del body */
-    color: blue;
+body {<br>
+&nbsp;font-family: Arial, sans-serif;<br>
+}<br>
+p {<br>
+&nbsp;/* El párrafo heredará el font-family del body */<br>
+&nbsp;color: blue;<br>
 }
                     </code>
-                </pre>
-                <h3>Valores especiales de la herencia</h3>
-                <p>Algunos valores especiales en CSS que afectan la herencia incluyen inherit, initial, y unset.</p>
-                <pre>
+<h3>Valores especiales de la herencia</h3>
+<p>Algunos valores especiales en CSS que afectan la herencia incluyen inherit, initial, y unset.</p>
                     <code>
-.child {
-    color: inherit; /* Toma el color del elemento padre */
+.child {<br>
+&nbsp;color: inherit; /* Toma el color del elemento padre */<br>
 }
                     </code>
-                </pre>
                 <h3>Modelo de la Caja</h3>
                 <p>El modelo de la caja describe cómo se calculan el ancho y el alto de los elementos, incluyendo margin, border, padding y content.</p>
                 <ul>
@@ -358,53 +304,42 @@ p {
                     <li><strong>Padding:</strong> Espacio interior entre el borde y el contenido del elemento.</li>
                     <li><strong>Border:</strong> Borde alrededor del contenido y el padding del elemento.</li>
                 </ul>
-                <pre>
                     <code>
-div {
-    margin: 10px;
-    padding: 20px;
-    border: 2px solid black;
+div {<br>
+&nbsp;margin: 10px;<br>
+&nbsp;padding: 20px;<br>
+&nbsp;border: 2px solid black;<br>
 }
                     </code>
-                </pre>
-                <h3>box-sizing</h3>
-                <p>La propiedad box-sizing define cómo se calculan el ancho y el alto de un elemento. El valor border-box incluye el padding y el borde en el ancho y el alto total del elemento.</p>
-                <pre>
+<h3>box-sizing</h3>
+<p>La propiedad box-sizing define cómo se calculan el ancho y el alto de un elemento. El valor border-box incluye el padding y el borde en el ancho y el alto total del elemento.</p>
                     <code>
-div {
-    box-sizing: border-box;
+div {<br>
+    box-sizing: border-box;<br>
 }
                     </code>
-                </pre>
                 <h3>Especificidad y Cascada</h3>
                 <p>La especificidad determina qué reglas CSS se aplican a un elemento cuando hay múltiples reglas que coinciden. Las reglas más específicas tienen mayor prioridad.</p>
                 <p>La cascada en CSS determina el orden en que se aplican las reglas de estilo. Las reglas más específicas y las definidas más adelante en el código tienen prioridad.</p>
                 <h3>Fallbacks</h3>
                 <p>Los fallbacks son valores de respaldo que se usan si un navegador no soporta una propiedad o valor CSS.</p>
-                <pre>
                     <code>
-div {
-    background: red; /* Fallback */
-    background: rgba(255, 0, 0, 0.5);
+div {<br>
+&nbsp;background: red; /* Fallback */<br>
+&nbsp;background: rgba(255, 0, 0, 0.5);<br>
 }
-
                     </code>
-                </pre>
                 <h3>Estilos en línea</h3>
                 <p>Los estilos en línea se aplican directamente a un elemento HTML usando el atributo style.</p>
-                <pre>
                     <code>
-                        &lt;style="color: blue;">Texto en azul&gt;
+&lt;style="color: blue;">Texto en azul&gt;
                     </code>
-                </pre>
                 <h3>Formas de saltarse la especifidad</h3>
-                <pre>
                     <code>
-div {
-    color: red !important;
+div {<br>
+&nbsp;color: red !important;<br>
 }
                     </code>
-                </pre>
                 <h3>Unidades Relativas y Absolutas</h3>
                 <p>Las unidades absolutas (e.g., px, cm, mm) tienen un tamaño fijo, mientras que las unidades relativas (e.g., %, em, rem) dependen de otros valores.</p>
                 <h3>Reset CSS y Normalize</h3>
@@ -416,22 +351,233 @@ div {
         </section>
         <section id="JavaScript_Programming" class="main-section">
             <header>
-                <h1>JavaScript Programming</h1>
+                <h1>Fundamenros de JavaScript</h1>
             </header>
             <article>
-                <p>JavaScript is a programming language that enables dynamic content and interactive features on web pages. It can be used to manipulate HTML and CSS, handle user interactions, and perform asynchronous operations.</p>
-                <h3>Key Concepts:</h3>
+                <p>JavaScript es un lenguaje de programación interpretado y de alto nivel que se ejecuta principalmente en navegadores web, aunque también puede ejecutarse en servidores utilizando tecnologías como Node.js. Es utilizado para crear contenido interactivo y dinámico en sitios web, complementando HTML y CSS. Su flexibilidad y versatilidad lo convierten en uno de los lenguajes más populares en el desarrollo web.</p>
+                <h3>Variables</h3>
+                <p>Las variables son contenedores que permiten almacenar datos para su uso posterior en el programa. En JavaScript, se pueden declarar utilizando var, let o const.</p>
                 <ul>
-                    <li><b>Variables:</b> Used to store data, defined with <code>var</code>, <code>let</code>, or <code>const</code>.</li>
-                    <li><b>Functions:</b> Blocks of code that perform tasks, defined with the <code>function</code> keyword.</li>
-                    <li><b>Events:</b> Actions triggered by user interactions, such as clicks and key presses.</li>
-                    <li><b>DOM Manipulation:</b> Accessing and modifying HTML elements using JavaScript.</li>
+                    <li><strong>var:</strong> Forma antigua de declarar variables, con alcance global o de función. No se recomienda su uso.</li>
+                    <li><strong>let:</strong> Permite declarar variables con un alcance limitado al bloque donde se define.</li>
+                    <li><strong>const:</strong> Se utiliza para declarar constantes, es decir, valores que no cambian una vez asignados.</li>
                 </ul>
-                <p>Example:</p>
+                    <code>
+let nombre = "Carlos";&nbsp;&nbsp;// Variable que puede cambiar<br>
+const PI = 3.14;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Constante que no cambia<br>
+var edad = 18;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Uso menos recomendado<br>
+                    </code>
+                <h3>Reglas para Nombrar Variables</h3>
+                <ol>
+                    <li>Los nombres pueden contener letras, números, $ y _.</li>
+                    <li>Deben comenzar con una letra, $ o _ (nunca con un número).</li>
+                    <li>No pueden usar palabras reservadas como var, function, etc.</li>
+                    <li>Es una buena práctica usar camelCase para nombrar variables largas: miVariableImportante.</li>
+                </ol>
+                <h3>Tipos de Datos</h3>
+                <p>JavaScript soporta varios tipos de datos que se dividen en primitivos y no primitivos.</p>
+                <ol>
+                    <li>
+                        <ul>
+                            <strong>Primitivos:</strong>
+                            <li><strong>string:</strong> Representa texto. Ejemplo: "Hola".</li>
+                            <li><strong>number:</strong> Representa números, tanto enteros como decimales. Ejemplo: 24, 3.14.</li>
+                            <li><strong>bolean:</strong> Representa valores lógicos. Ejemplo: true, false.</li>
+                            <li><strong>undefined:</strong> Indica que una variable ha sido declarada pero no inicializada.</li>
+                            <li><strong>null:</strong> Representa la ausencia de valor.</li>
+                            <li><strong>symbol:</strong> Identificador único (uso avanzado).</li>
+                        </ul>
+                        <ul>
+                            <strong>No primitivos:</strong>
+                            <li><strong>object:</strong> Representa colecciones de datos o entidades más complejas, como objetos y arrays.</li>
+                        </ul>
+                    </li>
+                </ol>
+                    <code>
+let texto = "Hola";&nbsp;&nbsp;&nbsp;// string<br>
+let numero = 42;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// number<br>
+let esActivo = true;&nbsp;&nbsp;// boolean<br>
+let valor = null;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// null<br>
+                    </code>
+                <h3>Constantes</h3>
+                <p>Las constantes se declaran con const y no pueden ser reasignadas. Sin embargo, si la constante es un objeto o array, sus propiedades o elementos pueden modificarse.</p>
+                    <code>
+const URL = "https://mi-sitio.com";
+                    </code>
+                <h3>Tipado Dinámico</h3>
+                <p>JavaScript es un lenguaje de tipado dinámico, lo que significa que las variables pueden cambiar su tipo en tiempo de ejecución. Esto ofrece flexibilidad, pero también puede llevar a errores si no se maneja con cuidado.</p>
+                    <code>
+let dato = 42;&nbsp;&nbsp;&nbsp;// tipo number<br>
+dato = "Texto";&nbsp;&nbsp;&nbsp;// tipo string<br>
+                    </code>
+                <h3>Comentarios</h3>
+                <p>Los comentarios se utilizan para explicar el código y mejorar su legibilidad.</p>
+                <ul>
+                    <li><strong>Una línea:</strong> Usar // al inicio de la línea.</li>
+                    <li><strong>Múltiples líneas:</strong> Múltiples líneas: Encerrar el texto entre /* y */.</li>
+                </ul>
+                    <code>
+// Esto es un comentario de una línea<br>
+/*<br>
+&nbsp;Esto es un comentario<br>
+&nbsp;de múltiples líneas<br>
+*/
+                    </code>
+                <h3>Objetos</h3>
+                <p>Los objetos son estructuras de datos que almacenan pares clave-valor. Las claves son cadenas y los valores pueden ser de cualquier tipo.</p>
+                    <code>
+let persona = {<br>
+&nbsp;nombre: "Carlos",<br>
+&nbsp;edad: 18,<br>
+&nbsp;saludar: function() {<br>
+&nbsp;&nbsp;console.log("Hola, soy " + this.nombre);<br>
+&nbsp;}<br>
+};<br>
+persona.saludar();
+                    </code>
+                <h3>Arrays</h3>
+                <p>Los arrays son listas ordenadas de datos que pueden contener elementos de diferentes tipos. Se accede a los elementos utilizando índices, que comienzan en 0.</p>
+                    <code>
+let colores = ["rojo", "verde", "azul"];<br>
+console.log(colores[0]); // rojo
+                    </code>
+                <h3>Métodos Comunes para Arrays</h3>
+                <ul>
+                    <li><strong>push():</strong> Agrega un elemento al final.</li>
+                    <li><strong>pop():</strong> Elimina el último elemento.</li>
+                    <li><strong>shift():</strong> Elimina el primer elemento.</li>
+                    <li><strong>unshift():</strong> Agrega un elemento al inicio.</li>
+                    <li><strong>map():</strong> Crea un nuevo array con los resultados de aplicar una función a cada elemento.</li>
+                    <li><strong>filter():</strong> Crea un nuevo array con los elementos que cumplen una condición.</li>
+                    <li><strong>reduce():</strong> Reduce un array a un solo valor aplicando una función acumulativa.</li>
+                </ul>
+                <h3>Declaración de Funciones</h3>
+                <p>Las funciones encapsulan bloques de código reutilizables que pueden ejecutarse varias veces.</p>
+                    <code>
+function saludar(nombre) {<br>
+&nbsp;return "Hola, " + nombre;<br>
+}<br>
+console.log(saludar("Carlos"));
+                    </code>
+                <h3>Expresiones de Funciones</h3>
+                <p>Una función también puede ser asignada a una variable.</p>
+                    <code>
+const saludar = function(nombre) {<br>
+&nbsp;return "Hola, " + nombre;<br>
+};
+                    </code>
+                <h3>Arrow Functions</h3>
+                <p>Una sintaxis más concisa para definir funciones. Ideal para funciones cortas.</p>
+                    <code>
+const saludar = (nombre) => "Hola, " + nombre;
+                    </code>
+                <h3>Argumentos y Parámetros</h3>
+                <ul>
+                    <li><strong>Parámetros:</strong>Los vaolores que una función espera recibir.</li>
+                    <li><strong>Argumentos:</strong>Los valores que pasas al llamar a la función.</li>
+                </ul>
+                    <code>
+function sumar(a, b) {<br>
+&nbsp;return a + b;<br>
+}<br>
+console.log(sumar(3, 5)); // 8
+                    </code>
+                <h3>Operadores Aritméticos</h3>
+                <p>Realizan operaciones matemáticas:</p>
+                <ul>
+                    <li><strong>+:</strong> Suma</li>
+                    <li><strong>-:</strong> Resta</li>
+                    <li><strong>*:</strong> Multiplicación</li>
+                    <li><strong>/:</strong> División</li>
+                    <li><strong>%:</strong> Módulo</li>
+                    <li><strong>**:</strong> Potenciación</li>
+                </ul>
+                <h3>Operadores de Asignación</h3>
+                <p>Asignan valores a las variables:</p>
+                <ul>
+                    <li><strong>=:</strong> Asignación</li>
+                    <li><strong>+=, -=, *=, /=:</strong> Operaciones combinadas</li>
+                </ul>
+                <h3>Operadores de Comparación</h3>
+                <p>Comparan valores y devuelven un booleano:</p>
+                <ul>
+                    <li><strong>==:</strong> Igualdad (no estricta)</li>
+                    <li><strong>===:</strong> Igualdad estricta</li>
+                    <li><strong>!=:</strong> Diferente</li>
+                    <li><strong>!==:</strong> Diferente estricta</li>
+                    <li><strong>&gt;:</strong> Mayor que</li>
+                    <li><strong>&lt;:</strong> Menor que</li>
+                </ul>
+                <h3>Operadores Lógicos</h3>
+                <ul>
+                    <li><strong>&&:</strong> AND (y)</li>
+                    <li><strong>||:</strong> OR (o)</li>
+                    <li><strong>!:</strong> NOT (negación)</li>
+                </ul>
+                <h3>Condicionales</h3>
+                <ul>
+                    <li>
+                        <strong>if-else:</strong>
+                        <p>Estructura básica para decisiones condicionales.</p>
+                    </li>
+                    <code>
+if (edad >= 18) {<br>
+&nbsp;console.log("Eres mayor de edad.");<br>
+}   else {<br>
+&nbsp;console.log("Eres menor de edad.");<br>
+}
+                            </code>
+                    <li>
+                        <strong>switch:</strong>
+                        <p>Simplifica la toma de decisiones múltiples basadas en el valor de una variable.</p>
+                    </li>
+                    <code>
+let dia = 3;<br>
+switch (dia) {<br>
+&nbsp;case 1:<br>
+&nbsp;&nbsp;console.log("Lunes");<br>
+&nbsp;&nbsp;break;<br>
+&nbsp;case 2:<br>
+&nbsp;&nbsp;console.log("Martes");<br>
+&nbsp;&nbsp;break;<br>
+&nbsp;&nbsp;default:<br>
+&nbsp;&nbsp;console.log("Día no válido");<br>
+}
+                            </code>
+                </ul>
+                <h3>React</h3>
+                <p>React es una biblioteca de JavaScript para construir interfaces de usuario. Es declarativa, eficiente y basada en componentes.</p>
+                    <code>
+import React from "react";<br>
+function App() {<br>
+&nbsp;return (<br>
+&nbsp;&nbsp;&lt;div&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hola Mundo&lt;/h1&gt;<br>
+&nbsp;&nbsp;&lt;div&gt;<br>
+&nbsp;);<br>
+}
+export default App;
+                    </code>
+                <h3>Vue.js</h3>
+                <p>Vue.js es un framework progresivo que permite crear interfaces de usuario reactivas y dinámicas.</p>
+                    <code>
+const app = Vue.createApp({<br>
+&nbsp;data() {<br>
+&nbsp;&nbsp;return {<br>
+&nbsp;&nbsp;&nbsp;mensaje: "Hola Vue!"<br>
+&nbsp;&nbsp;};<br>
+&nbsp;}<br>
+});<br>
+app.mount("#app");
+                    </code>
+                <h3>Node.js</h3>
+                <p>Node.js es un entorno de ejecución que permite utilizar JavaScript en el lado de servidor.</p>
                 <code>
-document.getElementById('myButton').addEventListener('click', function() {<br>
-    alert('Button clicked!');<br>
-});
+const http = require("http");<br>
+http.createServer((req, res) => {<br>
+&nbsp;res.write("Hola desde Node.js");<br>
+&nbsp;res.end();<br>
+}).listen(3000);
                 </code>
             </article>
         </section>
@@ -455,6 +601,9 @@ document.getElementById('myButton').addEventListener('click', function() {<br>
     }<br>
 }
                 </code>
+                <h3>Conclusión</h3>
+                <p>JavaScript es un lenguaje esencial en el desarrollo web gracias a su versatilidad y facilidad para crear aplicaciones dinámicas tanto en el cliente como en el servidor. Su combinación de características básicas y avanzadas permite manejar tareas simples, como manipular elementos del DOM, hasta desarrollar aplicaciones completas utilizando herramientas como Node.js o frameworks modernos como React y Vue.js.</p>
+                <p>El ecosistema de JavaScript, en constante evolución, lo convierte en una herramienta indispensable para cualquier desarrollador. Dominar sus fundamentos y explorar su amplia gama de aplicaciones es clave para aprovechar todo su potencial en el desarrollo de software actual.</p>
             </article>
         </section>
         <section id="Best_Practices" class="main-section">
